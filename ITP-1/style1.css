@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Slab:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald&family=Roboto+Slab:wght@900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.carousel-item img{
+    width: 100%;
+    height: 95vh;
+}
+
+
+body{
+    background: #343a40;
+}
+
+main{
+    background-color: #078282FF;
+}
+
+main nav{
+    width: 100%;
+    height: 100%;
+    background-color: #00203FFF;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    z-index: 999;
+    justify-content: space-between;
+    padding: 1%;
+}
+nav h1{
+    color: #fff;
+    margin: 0 60px;
+    font-family: 'Roboto Slab';
+    font-size: 30px;
+    font-weight: 200px;
+}
+.nav-links ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-links ul a{
+    text-decoration: none;
+    color: #fff;
+    margin: 0 25px;
+    font-size: 20px;
+}
+
+.search_bar{
+    width: 100%;
+    max-width: 700px;
+    background: rgb(22, 141, 220);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+}
+.search_bar input{
+    background: transparent;
+    flex: 1;
+    outline: none;
+    border: 0;
+    padding: 5px 20px;
+    font-size: 15px;
+    color: #fff;
+}
+::placeholder{
+    color: #fff;
+}
+
+.search_bar button{
+    border: 0;
+    border-radius: 75px;
+    width: 50px;
+    height: 30px;
+    background: #111;
+    font-size: 10px;
+    cursor: pointer;
+    color: #fff;
+}
+
+section{
+    padding: 30px 80px;
+    margin: auto;
+}
+
+.about .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    font-family: 'Poppins';
+}
+
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .about-content .left{
+    width: 45%;
+}
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px  ;
+}
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about .about-content .right{
+    width: 55%;
+}
+
+.about .about-content .right p{
+    align-items: justify;
+}
+
+.about .about-content .right a{
+    display: inline-block;
+    background: white;
+    color: black;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    border: 2px solid #8c7bf6;
+    transition: all 0.3s ease;
+}
+
+.tour{
+    background: white;
+}
+  
+.tour img{
+    width: 18rem;
+}
+
+.tour .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Poppins';
+    text-decoration: none;
+    color: #111;
+}
+
+.tour-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    cursor: pointer;
+}
+
+.tour-container .box{
+    flex: 1 1 30rem;
+    color: #fff;
+    background: #00203FFF;
+    padding: 3rem 2rem 4rem;
+    border-radius: 6px;
+    text-align: center;
+    border: .2rem solid #111;
+    transition: .5s ease;
+}
+
+.tour-container .box:hover{
+    border-color: #F1F6F9;
+    transform: scale(1.02);
+}
+
+.btn{
+    background: #fff;
+    padding: 15px 25px;
+    font-size: 15px;
+    color: #111;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 10px;
+    line-height: 1;
+    display: inline-block;
+}
+
+.contact{
+    font-family: 'Poppins', sans-serif;
+    background: #235189;
+}
+
+.contact .title{
+    position: relative;
+    text-align: left;
+    font-size: 40px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    font-family: 'Poppins'
+}
+
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.contact .contact-content .left p{
+    text-align: justify;
+}
+
+.contact .contact-content .left .icon{
+    margin: 10px 0;
+}
+
+.contact .contact-content .list{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.contact .contact-content .list .info{
+    margin-left: 30px;
+}
+
+.contact .contact-content .list i{
+    font-size: 25px;
+    color: #111;
+}
+
+.contact .contact-content .info .head{
+    font-weight: 500;
+}
+
+.contact .contact-content .info .sub-title{
+    color: #333;
+}
+
+.contact .right form .fields{
+    display: flex;
+}
+
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contact .right form .name{
+    margin-right: 10px;
+}
+
+.contact .right form .email{
+    margin-right: 10px;
+}
+
+.contact .right form .field input{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn.btn2{
+    display: inline-block;
+    background: rgb(115, 97, 247);
+    color: #fff;
+}
+
+.contact-message form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #333;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #00203FFF;
+    font-weight: 300;
+    margin-top: 20px;
+    color: #fff;
+}
